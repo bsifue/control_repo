@@ -1,7 +1,3 @@
-node 'master.puppet.vm' {
-  include role::master_server
-}
-
 node default {
   file{'/root/README':
     ensure    => file,
@@ -15,4 +11,7 @@ node default {
       All Rescource Types: https://docs.puppet.com/latest/type.html',
     owner     => 'root',
   }
+}
+node 'master.puppet.vm' {
+  include role::master_server
 }
