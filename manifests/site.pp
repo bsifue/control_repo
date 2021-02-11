@@ -6,7 +6,8 @@ node default {
   }
   file{'/root/helloWorld':
     ensure    => file,
-    content   => 'hello world',
+    content   => 'hello world - special notes - 
+      All Rescource Types: https://docs.puppet.com/latest/type.html',
     owner     => 'root',
   }
 }
