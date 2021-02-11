@@ -3,14 +3,16 @@ node default {
     ensure    => file,
     content   => 'This is a readme',
     owner     => 'root',
-  }
+    }
 
-  file{'/root/helloWorld':
+    file{'/root/helloWorld':
     ensure    => file,
     content   => 'hello world - special notes - 
-      All Rescource Types: https://docs.puppet.com/latest/type.html',
+    All Rescource Types: https://docs.puppet.com/latest/type.html',
     owner     => 'root',
+    }
 }
+
 node 'master.puppet.vm' {
   include role::master_server
 }
