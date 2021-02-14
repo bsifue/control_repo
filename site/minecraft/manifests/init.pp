@@ -19,7 +19,7 @@ class minecraft (
   }
   file {'/etc/systemd/system/minecraft.service':
     ensure => file,
-    content => epp('minecraft/template/minecraft.service.epp', {
+    content => epp('minecraft/minecraft.service.epp', {
       install_dir => $install_dir,
     }),
   }
