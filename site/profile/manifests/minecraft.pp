@@ -1,3 +1,4 @@
 class profile::minecraft {
-  include minecraft 
+  include minecraft
 }
+
