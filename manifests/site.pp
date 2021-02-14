@@ -12,7 +12,7 @@ node 'master.puppet.vm' {
   
   file{'/root/README':
     ensure    => file,
-    content   => $fqdn,
+    content   => "Welcome to marwin $fqdn",
     }
 }
 
